@@ -1,6 +1,7 @@
 import 'package:al_hijrah/theme/theme_color.dart';
 import 'package:al_hijrah/theme/theme_text.dart';
 import 'package:al_hijrah/ui/page/home/home_header.dart';
+import 'package:al_hijrah/ui/page/home/home_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:relative_scale/relative_scale.dart';
@@ -68,6 +69,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
+                const HomeMenu(),
               ],
             ),
           ),
