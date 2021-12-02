@@ -11,6 +11,7 @@ class HomeHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return RelativeBuilder(
       builder: (context, height, width, sy, sx) {
+        /// Background
         return Container(
           height: sy(250),
           width: double.infinity,
@@ -21,6 +22,7 @@ class HomeHeader extends StatelessWidget {
               bottomLeft: Radius.circular(30.0),
             ),
           ),
+          /// Tumpukan Dalam background
           child: SafeArea(
             child: Container(
               width: double.infinity,
@@ -33,6 +35,7 @@ class HomeHeader extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  /// Al-Hijrah & Icon
                   Container(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -53,6 +56,7 @@ class HomeHeader extends StatelessWidget {
                       ],
                     ),
                   ),
+                  /// Widget Dzuhur & Waktu
                   Container(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -77,6 +81,7 @@ class HomeHeader extends StatelessWidget {
                       ],
                     ),
                   ),
+                  /// Widget yang paling bawah
                   Container(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

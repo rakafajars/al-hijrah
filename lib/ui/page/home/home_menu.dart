@@ -1,5 +1,6 @@
 import 'package:al_hijrah/theme/theme_color.dart';
 import 'package:al_hijrah/theme/theme_text.dart';
+import 'package:al_hijrah/ui/page/al_quran_hadits/custom_tab_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:relative_scale/relative_scale.dart';
@@ -24,10 +25,18 @@ class HomeMenu extends StatelessWidget {
             shrinkWrap: true,
             scrollDirection: Axis.horizontal,
             children: [
+              /// Menu Button
               menuButton(
                 image: 'image/quran.svg',
                 titleName: "Al-Qur'an &\nHadits",
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const CustomTabBar(),
+                    ),
+                  );
+                },
               ),
               menuButton(
                 image: 'image/praying.svg',
