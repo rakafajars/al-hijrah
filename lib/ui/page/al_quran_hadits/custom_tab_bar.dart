@@ -1,5 +1,6 @@
 import 'package:al_hijrah/theme/theme_color.dart';
 import 'package:al_hijrah/theme/theme_text.dart';
+import 'package:al_hijrah/ui/page/al_quran_hadits/al_quran_page.dart';
 import 'package:flutter/material.dart';
 import 'package:relative_scale/relative_scale.dart';
 
@@ -146,7 +147,6 @@ class CustomTabBar extends StatelessWidget {
                     ),
                   ),
 
-
                   /// TabBar
                   Column(
                     children: [
@@ -184,6 +184,13 @@ class CustomTabBar extends StatelessWidget {
                   )
                 ],
               ),
+            ),
+            body: TabBarView(
+              children: [
+                const AlQuranPage(),
+                Container(),
+                Container(),
+              ],
             ),
           ),
         );
